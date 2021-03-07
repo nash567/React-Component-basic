@@ -1,12 +1,22 @@
 //import react and ReactDom
 import React from "react"
 import ReactDom from "react-dom"
-
-
+import CommentDetail from "./CommentDetail"
+import ApprovalCard from "./ApprovalCard"
 
 // create a react component
 const App = () => {
-    return <div>Hi there!</div>;
+    return (
+    <div className="ui container comments">
+        <ApprovalCard >
+        <CommentDetail author="sammy" timeAgo="12pm"></CommentDetail>
+        </ApprovalCard>
+        <ApprovalCard >
+        <CommentDetail author="Alex" timeAgo="3am"></CommentDetail>
+        </ApprovalCard>
+
+    </div>
+    );
 
 }
 
